@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
 import CommentDetail from './CommentDetail'
+import faker from 'faker'
 
 
 const App = () => {
@@ -8,9 +9,24 @@ const App = () => {
 	const labelText = 'Enter Name'
     return (
         <div className='ui container comments'>
-			<CommentDetail />
-			<CommentDetail />
-			<CommentDetail />
+			<CommentDetail 
+				author="Sam" 
+				date="Today at 4pm" 
+				text="Comment 1 here" 
+				avatar={faker.image.image()}
+			/>
+			<CommentDetail 
+				author="Alex" 
+				date="Today at 8pm" 
+				text="Comment 2 here" 
+				avatar={faker.image.image()}
+			/>
+			<CommentDetail 
+				author="Jane" 
+				date="Today at 10pm" 
+				text="Comment 3 here" 
+				avatar={faker.image.image()}
+			/>
 		</div>
     )
 }
