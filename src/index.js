@@ -11,6 +11,11 @@ const App = () => {
     return (
         <div className='ui container comments'>
 			<ApprovalCard>
+				<div>
+					<h1>Props.children displays any children of that component, like this H1. It doesn't have to be a react component</h1>
+				</div>
+			</ApprovalCard>
+			<ApprovalCard>
 				<CommentDetail 
 					author="Sam" 
 					date="Today at 4pm" 
