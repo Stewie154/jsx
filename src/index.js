@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
+import CommentDetail from './CommentDetail'
 
 
 const App = () => {
@@ -7,7 +8,9 @@ const App = () => {
 	const labelText = 'Enter Name'
     return (
         <div className='ui container comments'>
-			
+			<CommentDetail />
+			<CommentDetail />
+			<CommentDetail />
 		</div>
     )
 }
