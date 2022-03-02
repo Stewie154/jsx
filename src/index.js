@@ -10,25 +10,30 @@ const App = () => {
 	const labelText = 'Enter Name'
     return (
         <div className='ui container comments'>
-			<ApprovalCard />
-			<CommentDetail 
-				author="Sam" 
-				date="Today at 4pm" 
-				text="Comment 1 here" 
-				avatar={faker.image.image()}
-			/>
-			<CommentDetail 
-				author="Alex" 
-				date="Today at 8pm" 
-				text="Comment 2 here" 
-				avatar={faker.image.image()}
-			/>
-			<CommentDetail 
-				author="Jane" 
-				date="Today at 10pm" 
-				text="Comment 3 here" 
-				avatar={faker.image.image()}
-			/>
+			<ApprovalCard>
+				<CommentDetail 
+					author="Sam" 
+					date="Today at 4pm" 
+					text="Comment 1 here" 
+					avatar={faker.image.image()}
+				/>
+			</ApprovalCard>
+			<ApprovalCard>
+				<CommentDetail 
+					author="Alex" 
+					date="Today at 8pm" 
+					text="Comment 2 here" 
+					avatar={faker.image.image()}
+				/>
+			</ApprovalCard>
+			<ApprovalCard>
+				<CommentDetail 
+					author="Jane" 
+					date="Today at 10pm" 
+					text="Comment 3 here" 
+					avatar={faker.image.image()}
+				/>
+			</ApprovalCard>
 		</div>
     )
 }
