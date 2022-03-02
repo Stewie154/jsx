@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM  from 'react-dom'
 import CommentDetail from './CommentDetail'
+import ApprovalCard from './ApprovalCard'
 import faker from 'faker'
 
 
@@ -9,6 +10,7 @@ const App = () => {
 	const labelText = 'Enter Name'
     return (
         <div className='ui container comments'>
+			<ApprovalCard />
 			<CommentDetail 
 				author="Sam" 
 				date="Today at 4pm" 
